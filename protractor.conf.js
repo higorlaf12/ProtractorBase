@@ -1,12 +1,16 @@
 var SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 var AllureReporter = require('jasmine-allure-reporter');
+
+// exports.WORKSPACE = require('e2e-properties.js');
+// var properties = require(process.env.WORKSPACE);
+
 exports.config = {
   // The address of a running selenium server.
-  seleniumAddress: 'http://localhost:4444/wd/hub',
+  seleniumAddress: "http://localhost:4444/wd/hub",
 
   // Spec patterns are relative to the location of this config.
   specs: [
-    'spec/*_spec.js'
+    'webapp/e2e/spec/*Spec.js'
   ],
 
 

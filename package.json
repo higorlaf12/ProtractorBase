@@ -2,19 +2,26 @@
   "name": "protractor-tests",
   "version": "0.0.1",
   "devDependencies": {
-    "jasmine-spec-reporter": "^4.2.1",
-    "protractor": "3.0.0",
     "chai": "^4.1.2",
     "jasmine": "^2.8.0",
-    "jasmine-allure-reporter": "^1.0.1",
+    "jasmine-allure-reporter": "^1.0.2",
     "jasmine-core": "^2.8.0",
+    "jasmine-spec-reporter": "^4.2.1",
     "jasmine2-custom-message": "^0.8.4",
     "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
     "karma-jasmine": "^0.1.0",
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "protractor": "3.0.0"
   },
   "scripts": {
-    "install": "node ./node_modules/protractor/bin/webdriver-manager update"
+    "install": "node ./node_modules/protractor/bin/webdriver-manager update",
+    "test-protractor": "protractor protractor.conf.js",
+    "runWebdriver": "webdriver-manager start",
+    "updaeWebdriver":"webdriver-manager update",
+    "test":"karma start --single-run",
+    "test-karma": "karma start"
   },
   "dependencies": {
     "jasmine-allure-reporter": "^1.0.2"
