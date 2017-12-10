@@ -11,5 +11,6 @@ describe("Enter in google",function () {
         browser.get(url);
         head.enteringDataintotheSearchField.sendKeys(expectedData.search);
         head.clickOnSearch.click();
+        expect(head.enteringDataintotheSearchField.getAttribute("value")).toEqual(expectedData.search);
     });
 });
